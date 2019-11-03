@@ -1,3 +1,3 @@
-# JetCrypto Mock API Server
+# JetCrypto API Sandbox
 
-JetCrypto Mock API Server; used for development purposes ONLY.
+JetCrypto API Sandbox; used for development purposes ONLY.

@@ -1,7 +1,7 @@
 {
-  "name": "jetcrypto-mock-api-server",
+  "name": "jetcrypto-api-sandbox",
   "version": "19.11.3",
-  "description": "JetCrypto Mock API Server",
+  "description": "JetCrypto API Sandbox",
   "main": "index.js",
   "repository": "git@github.com:modenero/jetcrypto-mock-api-server.git",
   "author": "Modenero <support@modenero.com>",
