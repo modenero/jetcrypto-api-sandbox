@@ -7,9 +7,13 @@
   "author": "Modenero <support@modenero.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "vows --spec"
   },
   "dependencies": {
     "express": "4.17.1"
+  },
+  "devDependencies": {
+    "vows": "0.8.3"
   }
 }
