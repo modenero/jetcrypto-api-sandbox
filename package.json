@@ -1,0 +1,12 @@
+{
+  "name": "jetcrypto-mock-api-server",
+  "version": "19.11.3",
+  "description": "JetCrypto Mock API Server",
+  "main": "index.js",
+  "repository": "git@github.com:modenero/jetcrypto-mock-api-server.git",
+  "author": "Modenero <support@modenero.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
