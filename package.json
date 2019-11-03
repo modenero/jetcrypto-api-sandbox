@@ -6,7 +6,10 @@
   "repository": "git@github.com:modenero/jetcrypto-mock-api-server.git",
   "author": "Modenero <support@modenero.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "4.17.1"
   }
 }

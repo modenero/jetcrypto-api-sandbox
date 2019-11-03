@@ -5,22 +5,24 @@ FROM node:10-slim
 LABEL maintainer="Modenero <support@modenero.com>"
 
 # Create a working directory.
-WORKDIR /var/www/html
+WORKDIR /usr/src/app
 
 RUN apt-get update \
     && npm install -g yarn
 
-COPY package.json .
+# Copy package information.
+# NOTE: A wildcard is used to ensure both package.json AND package-lock.json
+#       are copied where available (npm@5+).
+COPY package*.json ./
+
+# Install app dependencies.
 RUN npm install
 
-# What is this for??
-COPY . ./
+# Bundle app source (to working directory).
+COPY . .
 
-# Expose (default) http port.
+# Expose (default) HTTP port.
 EXPOSE 80
-
-# CMD ["echo", "Hello JetCrypto!"]
-# CMD ["node", "/var/www/html/index.js"]
 
 # Start the server.
 CMD [ "npm", "start" ]
