@@ -1,1 +1,1 @@
-docker run -d jetcrypto-api
+docker run --rm -p 8080:80 jetcrypto-api

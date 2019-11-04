@@ -11,7 +11,8 @@
     "test": "vows --spec"
   },
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "moment": "2.24.0"
   },
   "devDependencies": {
     "vows": "0.8.3"
