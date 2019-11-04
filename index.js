@@ -27,7 +27,6 @@ app.get('/', (req, res) => {
         https://github.com/modenero/jetcrypto-api-sandbox
     `)
 })
-app.get('/', (req, res) => )
 
 /**
  * api/Account/:id
