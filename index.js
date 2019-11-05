@@ -24,7 +24,8 @@ const _error = function (_msg) {
 app.get('/', (req, res) => {
     res.send(`
         <h3>Hello JetCrypto!</h3>
-        https://github.com/modenero/jetcrypto-api-sandbox
+        <a href="https://github.com/modenero/jetcrypto-api-sandbox" target="_blank">
+        https://github.com/modenero/jetcrypto-api-sandbox</a>
     `)
 })
 
