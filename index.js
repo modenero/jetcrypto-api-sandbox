@@ -1,7 +1,7 @@
 const moment = require('moment')
 const express = require('express')
 const app = express()
-const port = 8088
+const port = 80
 
 // exports.simpleTest = function (x) {
 //   return 2 * x
