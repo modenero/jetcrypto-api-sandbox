@@ -1,6 +1,6 @@
 # JetCrypto API Sandbox
 
-> This JetCrypto API Sandbox was developed based on the JetCrypto (Swagger) API and is to be used for development purposes ONLY. __PLEASE NOTE:__ Only a limited subset of api calls are currently supported, as required for active development projects; however, more api calls can be added as needed.
+> This JetCrypto API Sandbox was developed based on the JetCrypto _(Swagger)_ API and is to be used for development purposes ONLY. __PLEASE NOTE:__ Only a limited subset of api calls are currently supported, as required for active development projects. Additional api calls will be added as needed _(or upon request)._
 
 ### JetCrypto Telr Endpoint
 
