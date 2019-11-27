@@ -166,11 +166,27 @@ app.post('/api/Trading/Trade', (req, res) => {
  * Create a NEW Trovemat Payment.
  */
 app.post('/api/Trovemat/Payment', (req, res) => {
+    /* Require slack. */
+    const Slack = require('slack')
+
+    let token = process.env.SLACK_BOT_TOKEN
+    console.log('SLACK TOKEN', token)
+
+    let bot = new Slack({ token })
+
+    ;(async function main() {
+        // logs {args:{hyper:'card'}}
+        var result = await bot.api.test({ hyper:'card' })
+
+        console.log(result)
+    })()
+
     /* Set (sample) success. */
     const success = true
 
     /* Set last update. */
     const lastUpdate = moment().unix()
+
 
     /* Build (sample) package. */
     const pkg = { success, lastUpdate }
