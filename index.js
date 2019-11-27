@@ -170,7 +170,7 @@ app.post('/api/Trovemat/Payment', (req, res) => {
     const Slack = require('slack')
 
     const token = process.env.SLACK_BOT_TOKEN
-    console.log('SLACK_BOT_TOKEN', botToken)
+    console.log('SLACK_BOT_TOKEN', token)
 
     const bot = new Slack({ token })
 
