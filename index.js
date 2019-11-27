@@ -169,6 +169,8 @@ app.post('/api/Trovemat/Payment', (req, res) => {
     /* Require slack. */
     const Slack = require('slack')
 
+    console.log(req);
+
     const token = process.env.SLACK_BOT_TOKEN
     console.log('SLACK_BOT_TOKEN', token)
 
@@ -176,13 +178,16 @@ app.post('/api/Trovemat/Payment', (req, res) => {
 
     const channel = '#telr'
 
-    const text = 'BOT is live!'
+    const text = '*Telr Bot Notification*\n'
 
-    const attachments = [{"pretext": "pre-hello", "text": "text-world"}]
+    const attachments = [
+        {
+            "pretext": "pre-hello",
+            "text": "text-world"
+        }
+    ]
 
     ;(async function main() {
-        // logs {args:{hyper:'card'}}
-        // var result = await bot.api.test({ hyper:'card' })
         var result = await bot.chat.postMessage({
             token, channel, text, attachments
         })
