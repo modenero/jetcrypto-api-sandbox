@@ -183,7 +183,7 @@ app.post('/api/Trovemat/Payment', (req, res) => {
 
     const text = '*Telr Bot Notification*\n'
 
-    const reqBody = '```' + req.body + '```'
+    const reqBody = '```' + JSON.stringify(req.body, null, 4) + '```'
 
     const attachments = [
         {
