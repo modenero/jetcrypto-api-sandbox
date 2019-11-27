@@ -178,11 +178,13 @@ app.post('/api/Trovemat/Payment', (req, res) => {
 
     const text = 'BOT is live!'
 
+    const attachments = [{"pretext": "pre-hello", "text": "text-world"}]
+
     ;(async function main() {
         // logs {args:{hyper:'card'}}
         // var result = await bot.api.test({ hyper:'card' })
         var result = await bot.chat.postMessage({
-            token, channel, text
+            token, channel, text, attachments
         })
 
         console.log(result)
