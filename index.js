@@ -181,13 +181,13 @@ app.post('/api/Trovemat/Payment', (req, res) => {
 
     const channel = '#telr'
 
-    const text = '*Telr Bot Notification*\n'
+    const text = '*Telr Bot Transaction Notification*\n'
 
-    const reqBody = '*Submitted to `https://jetcrypto.com/api/Trovemat/Payment`*\n\n```' + JSON.stringify(req.body, null, 4) + '```'
+    const reqBody = '*POSTED to `https://jetcrypto.com/api/Trovemat/Payment`*\n\n```' + JSON.stringify(req.body, null, 4) + '```'
 
     const attachments = [
         {
-            "pretext": "Submitted to `https://jetcrypto.com/api/Trovemat/Payment`",
+            // "pretext": "Submitted to `https://jetcrypto.com/api/Trovemat/Payment`",
             "text": reqBody
         }
     ]
