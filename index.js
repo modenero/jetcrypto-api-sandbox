@@ -171,8 +171,8 @@ app.post('/api/Trovemat/Payment', (req, res) => {
     /* Require slack. */
     const Slack = require('slack')
 
-    console.log(req);
-    console.log('BODY', req.body);
+    // console.log(req);
+    // console.log('BODY', req.body);
 
     const token = process.env.SLACK_BOT_TOKEN
     console.log('SLACK_BOT_TOKEN', token)
@@ -183,10 +183,12 @@ app.post('/api/Trovemat/Payment', (req, res) => {
 
     const text = '*Telr Bot Notification*\n'
 
+    const reqBody = '```' + req.body + '```'
+
     const attachments = [
         {
-            "pretext": "pre-hello",
-            "text": "text-world"
+            "pretext": "*Package Submitted to JetCrypto API",
+            "text": reqBody
         }
     ]
 
