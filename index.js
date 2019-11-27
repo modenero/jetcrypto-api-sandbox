@@ -172,11 +172,18 @@ app.post('/api/Trovemat/Payment', (req, res) => {
     const token = process.env.SLACK_BOT_TOKEN
     console.log('SLACK_BOT_TOKEN', botToken)
 
-    let bot = new Slack({ token })
+    const bot = new Slack({ token })
+
+    const channel = '#telr'
+
+    const text = 'BOT is live!'
 
     ;(async function main() {
         // logs {args:{hyper:'card'}}
-        var result = await bot.api.test({ hyper:'card' })
+        // var result = await bot.api.test({ hyper:'card' })
+        var result = await bot.chat.postMessage({
+            token, channel, text
+        })
 
         console.log(result)
     })()
