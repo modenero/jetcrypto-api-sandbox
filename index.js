@@ -3,8 +3,7 @@ const express = require('express')
 const app = express()
 const port = 80
 
-const bodyParser = require('body-parser')
-app.use(bodyParser);
+app.use(express.json())
 
 // exports.simpleTest = function (x) {
 //   return 2 * x
@@ -173,6 +172,7 @@ app.post('/api/Trovemat/Payment', (req, res) => {
     const Slack = require('slack')
 
     console.log(req);
+    console.log('BODY', req.body);
 
     const token = process.env.SLACK_BOT_TOKEN
     console.log('SLACK_BOT_TOKEN', token)
