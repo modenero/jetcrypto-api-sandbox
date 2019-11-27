@@ -187,7 +187,8 @@ app.post('/api/Trovemat/Payment', (req, res) => {
 
     const attachments = [
         {
-            "pretext": "POSTED to `https://jetcrypto.com/api/Trovemat/Payment`",
+            "type": "mrkdwn",
+            "pretext": "*POSTED* to `https://jetcrypto.com/api/Trovemat/Payment`",
             "text": reqBody
         }
     ]
