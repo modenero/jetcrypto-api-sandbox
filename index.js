@@ -161,6 +161,25 @@ app.post('/api/Trading/Trade', (req, res) => {
 })
 
 /**
+ * api/Trovemat/Payment
+ *
+ * Create a NEW Trovemat Payment.
+ */
+app.post('/api/Trovemat/Payment', (req, res) => {
+    /* Set (sample) success. */
+    const success = true
+
+    /* Set last update. */
+    const lastUpdate = moment().unix()
+
+    /* Build (sample) package. */
+    const pkg = { success, lastUpdate }
+
+    /* Send response. */
+    res.json(pkg)
+})
+
+/**
  * api/Trading/RemoveOrder
  *
  * Remove an order from the exchange.
